@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cos del document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: left; /* header a l'esquerra */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0066cc;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Formulari */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; /* ocupa tot l'ample disponible */
+    max-width: 800px; /* màxim ampli per no fer-lo massa gran en pantalles molt grans */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+/* Labels,  inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: left; /* justificat a l'esquerra*/
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* altres coses */
+input:focus-visible, textarea:focus-visible {
+    outline: 2px solid #0066cc; /* quan faig focus amb teclat o ratolí */
+}
+
+input:valid {
+    border-color: green; /* si el camp està bé, verd */
+}
+
+input:invalid {
+    border-color: red; /* si està malament, vermell */
+}
+
+/* Botó enviar */
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #004999; /* canvia color quan passo el ratolí */
+}

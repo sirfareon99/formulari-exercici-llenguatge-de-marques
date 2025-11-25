@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>Newsletter CIC</title>
+</head>
+<body>
+    <header>
+        <h1>Registra't al Newsletter de CIC</h1>
+        <p>Omple el formulari i rep totes les novetats!</p>
+    </header>
+<!-- formulari -->
+
+    <main>
+        <form action="" method="post" aria-label="Formulari registre newsletter">
+            <!-- formulari -->
+
+            <fieldset>
+                <legend>Dades personals</legend>
+
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom sencer" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+
+                <label for="data_naixement">Data de naixement:</label> 
+
+                <input type="date" id="data_naixement" name="data_naixement" required> <!-- camp nou per posar data -->
+                
+                <label for="color_favorit">Color favorit:</label>
+                <input type="color" id="color_favorit" name="color_favorit"> <!-- camp nou per seleccionar un color -->
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferències del newsletter</legend>
+<!-- seleccionar tants els que vulguis -->
+
+                <p>Tipus de contingut que vols rebre:</p>
+                <label>
+                    <input type="checkbox" name="interessos" value="noticies"> Notícies
+                </label>
+                <label>
+                    <input type="checkbox" name="interessos" value="events"> Events
+                </label>
+                <label>
+                    <input type="checkbox" name="interessos" value="ofertes"> Ofertes
+                </label>
+                        <!-- formulari per seleccionar un -->
+
+                <p>Freqüència:</p>
+                <label>
+                    <input type="radio" name="freq" value="setmanal" required> Setmanal
+                </label>
+                <label>
+                    <input type="radio" name="freq" value="mensual" required> Mensual
+                </label>
+                <label>
+                    <input type="radio" name="freq" value="trimestral" required> Trimestral
+                </label>
+            </fieldset>
+                <!-- fer comentaris -->
+
+            <fieldset>
+                <legend>Comentaris</legend>
+                <label for="comentaris">Digue'ns què t'agradaria veure:</label>
+                <textarea id="comentaris" name="comentaris" rows="5" placeholder="El teu missatge..."></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar registre</button>
+        </form>
+    </main>
+</body>
+</html>
