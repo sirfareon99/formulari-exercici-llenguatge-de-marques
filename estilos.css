@@ -20,7 +20,7 @@ header {
 }
 
 header h1 {
-    colro: #0066cc;
+    color: #0066cc;
     margin-bottom: 5px;
 }
 
@@ -33,7 +33,7 @@ header p {
 form {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px
+    border-radius: 8px;
     width: 100%; /* ocupa tot l'ample disponible */
     max-width: 800px; /* màxim ampli per no fer-lo massa gran en pantalles molt grans */
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
