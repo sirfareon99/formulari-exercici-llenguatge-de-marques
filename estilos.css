@@ -6,17 +6,19 @@
 
 /* Cos del document */
 body {
-    font-family: 'Ariel', sans-serif; /* ERROR: 'Ariel' mal escrit */
+    font-family: 'Arial', sans-serif;
     background-color: #f2f2f2;
     padding: 20px;
-    color: #333;
+    color: #333
+    ;;;        /* ERROR 1: tres puntos y coma seguidos + propiedad anterior sin ; */
 }
 
 /* Header */
 header {
-    text-align: left; /* header a l'esquerra */
+    text-align: left;
     margin-bottom: 20px;
-    bordr: 1px solid red; /* ERROR: propietat mal escrita */
+    border: 1px solid #ccc
+    background-color: #fff; /* ERROR 2: falta el ; después del border */
 }
 
 header h1 {
@@ -34,10 +36,11 @@ form {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    width: 100%; /* ocupa tot l'ample disponible */
-    max-width: 800px; /* màxim ampli per no fer-lo massa gran en pantalles molt grans */
+    width: 100%;
+    max-width: 800px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    widht: 90%; /* ERROR: 'widht' mal escrit (inútil però no trenca res greu) */
+    color: #333;
+    colro: #000; /* ERROR 3: propiedad inexistente + mal escrita */
 }
 
 /* Fieldset */
@@ -53,12 +56,11 @@ legend {
     color: #0066cc;
 }
 
-/* Labels, inputs */
+/* Labels,  inputs */
 label {
     display: block;
     margin-bottom: 5px;
     margin-top: 10px;
-    text-align: left; /* justificat a l'esquerra*/
 }
 
 input, select, textarea {
@@ -68,32 +70,4 @@ input, select, textarea {
     border: 1px solid #aaa;
     border-radius: 4px;
     font-size: 1rem;
-}
-
-/* altres coses */
-input:focus-visible, textarea:focus-visible {
-    outline: 2px solid #0066cc; /* quan faig focus amb teclat o ratolí */
-}
-
-input:valid {
-    border-color: green; /* si el camp està bé, verd */
-}
-
-input:invalid {
-    border-color: red; /* si està malament, vermell */
-}
-
-/* Botó enviar */
-button {
-    background-color: #0066cc;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #004999; /* canvia color quan passo el ratolí */
 }
