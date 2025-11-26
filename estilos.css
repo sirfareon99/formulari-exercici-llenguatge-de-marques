@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 
 /* Cos del document */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ariel', sans-serif; /* ERROR: 'Ariel' mal escrit */
     background-color: #f2f2f2;
     padding: 20px;
     color: #333;
@@ -17,6 +16,7 @@ body {
 header {
     text-align: left; /* header a l'esquerra */
     margin-bottom: 20px;
+    bordr: 1px solid red; /* ERROR: propietat mal escrita */
 }
 
 header h1 {
@@ -37,6 +37,7 @@ form {
     width: 100%; /* ocupa tot l'ample disponible */
     max-width: 800px; /* màxim ampli per no fer-lo massa gran en pantalles molt grans */
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    widht: 90%; /* ERROR: 'widht' mal escrit (inútil però no trenca res greu) */
 }
 
 /* Fieldset */
@@ -52,7 +53,7 @@ legend {
     color: #0066cc;
 }
 
-/* Labels,  inputs */
+/* Labels, inputs */
 label {
     display: block;
     margin-bottom: 5px;
